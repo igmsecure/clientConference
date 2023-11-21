@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/client-conference-app">
         <div className="App">
           <Routes>
             <Route path="/" element={<Navigate to="/authors" replace />} />
