@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/react-conference-app',
+  base: '/clientConference',
   server: {
     port: 3000,
     proxy: {
