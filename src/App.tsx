@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter basename="/clientConference">
         <div className="App">
           <Routes>
-            <Route path="/" element={<Navigate to="/authors" replace />} />
+            {/* <Route path="/" element={<Navigate to="/authors" replace />} /> */}
             <Route path="/authors" element={<HomePage />} />
             <Route path="/authors/:id" element={<AuthorPage />} />
           </Routes>
