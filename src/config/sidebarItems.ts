@@ -1,19 +1,13 @@
 export const SideBarItems = [
   // Make a list of Navlinks & their properties.
   {
-    title: "Home",
+    title: "Главная",
     url: "/",
     cName: "btn",
     icon: "fa-solid fa-house"
   },
   {
-    title: "About",
-    url: "/about",
-    cName: "btn",
-    icon: "fa-solid fa-circle-info"
-  },
-  {
-    title: "Sign Up",
+    title: "Вход",
     url: "/signup",
     cName: "btn"
   }
