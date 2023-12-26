@@ -1,0 +1,304 @@
+.main-block {
+    /* min-width: 626px; */
+    /*156*/
+    width: 100%;
+    /* max-width: 920px; */
+    /* margin-left: 15px; */
+}
+
+/* .main-header-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 10px;
+} */
+
+.main-header-text h2 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.disciplines {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card_image img {
+    padding: 10px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+.card_content ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.card_content li {
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #2B2B2B;
+}
+
+.card_content li span {
+    color: #2B2B2B;
+}
+
+.card .line {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 90%;
+    height: 1px;
+    background-color: #AAA6A6;
+    border-radius: 5px;
+}
+
+
+.card_content h3 {
+    text-align: center;
+}
+
+.authors-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 0.7rem;
+    margin: auto;
+    min-width: 270px;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 10px;
+}
+
+.card_title {
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+
+.item-card-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.card_content .btn {
+    color: #ffffff;
+    /* padding: 100px; */
+    width: 175px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    border-radius: 7px;
+    font-weight: 400;
+    display: block;
+    /* width: 100%; */
+    cursor: pointer;
+    background: #1871f8;
+}
+
+.card_content .btn:hover {
+    background-color: #0c55c1;
+}
+
+
+.item-card-button .btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(204, 204, 204);
+    color: #2B2B2B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background-color .2s ease-in-out;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!----------------------------  Media Screen  ----------------------------!> */
+
+@media screen and (max-width: 920px) {
+    .main-block {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .main-header-text h2 {
+        font-size: 16px;
+        margin: 0 auto 10px 0;
+    }
+
+    .disciplines {
+        padding-bottom: 20px;
+        border-radius: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .discipline-item img {
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+    }
+
+    .discipline-item .line {
+        margin-top: 5px;
+        height: 65px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .main-header-text h2 {
+        font-size: 14px;
+    }
+
+    .item-card-button .btn-cart {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .card_content .btn {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .item-card-button .btn-cart {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
