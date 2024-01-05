@@ -1,0 +1,142 @@
+.auth-main-block {
+    /* min-width: 626px; */
+    width: 100%;
+    /* max-width: 920px; */
+    /* margin-left: 15px; */
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    align-items: center;
+    margin: 10px;
+}
+
+.github-head {
+    font-size: 16px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.login-wrapper {
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 25px 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+}
+
+.input-label a {
+    color: #000000;
+}
+
+.login-wrapper .input-box input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 4px 6px;
+    color: #000000;
+    font-weight: 300;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.login-wrapper .input-box input:focus {
+    border: 1px solid 0f69ef;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    background-color: #0f69ef;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.submit-btn:hover {
+    transform: translateY(-1px);
+}
+
+.form-info {
+    color: #000000;
+    font-size: 15px;
+    margin-top: 35px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 20px 15px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.form-info a {
+    color: #3181F5;
+}
+
+.dev-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+@media screen and (max-width: 920px) {
+    .auth-main-block {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .form-info {
+        font-size: 14px;
+        padding: 17px 10px;
+    }
+
+    .input-label {
+        font-size: 14px;
+    }
+}
