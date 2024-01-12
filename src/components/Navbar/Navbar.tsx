@@ -11,11 +11,12 @@ import { Link } from "react-router-dom";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import { RootState } from "../../modules/store/store";
 import { useLocation } from 'react-router-dom';
+import DraftCart from '../DraftCart';
 
 
 
 interface NavbarProps {
-  articleID?: number; // Опциональный параметр articleID
+  articleID: number; // Опциональный параметр articleID
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ articleID }) => {
@@ -112,20 +113,21 @@ export const Navbar: React.FC<NavbarProps> = ({ articleID }) => {
       <div className="mobile-menu-head-icon">
 
         {isAuthorsPage && isAuth && (
-          <Link to={`/article/${articleID}`}>
-            <div className="draft-cart">
+          // <Link to={`/article/${articleID}`}>
+          //   <div className="draft-cart">
 
-              <button
-                className="draft-cart-button"
-                disabled={articleID === 0}
-                style={{ backgroundColor: articleID === 0 ? '#d6d3d388' : 'white' }}
-              >
-                <img className="draft-cart-img" src={draftCartSvg} alt="Cart" />
-              </button>
+          //     <button
+          //       className="draft-cart-button"
+          //       disabled={articleID === 0}
+          //       style={{ backgroundColor: articleID === 0 ? '#d6d3d388' : 'white' }}
+          //     >
+          //       <img className="draft-cart-img" src={draftCartSvg} alt="Cart" />
+          //     </button>
 
 
-            </div>
-          </Link>
+          //   </div>
+          // </Link>
+          <DraftCart articleID={articleID} />
         )}
 
         <div
