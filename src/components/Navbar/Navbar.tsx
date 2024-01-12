@@ -113,20 +113,6 @@ export const Navbar: React.FC<NavbarProps> = ({ articleID }) => {
       <div className="mobile-menu-head-icon">
 
         {isAuthorsPage && isAuth && (
-          // <Link to={`/article/${articleID}`}>
-          //   <div className="draft-cart">
-
-          //     <button
-          //       className="draft-cart-button"
-          //       disabled={articleID === 0}
-          //       style={{ backgroundColor: articleID === 0 ? '#d6d3d388' : 'white' }}
-          //     >
-          //       <img className="draft-cart-img" src={draftCartSvg} alt="Cart" />
-          //     </button>
-
-
-          //   </div>
-          // </Link>
           <DraftCart articleID={articleID} />
         )}
 
